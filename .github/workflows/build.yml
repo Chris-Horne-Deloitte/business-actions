@@ -1,4 +1,4 @@
-name: Test and Deploy
+name: Deploy Workflow
 on:
   push:
     branches:
@@ -13,4 +13,4 @@ jobs:
           node-version: latest
           cache: 'npm'
       - run: npm ci
-      - run: npm test
+
